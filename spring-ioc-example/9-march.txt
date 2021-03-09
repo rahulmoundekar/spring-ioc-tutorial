@@ -1,0 +1,158 @@
+Spring Framework :
+		
+	API : .jar
+		classes & interface,enum
+		
+-inbuild functionality
+-loosly coupled object
+-fully abstract
+-inbuild template
+	-jdbcTemplate, HibernateTemplate, RestTemplate
+-AOP : Aspect Oriented	programming
+	preconfigruation, postconguration
+-Batch : job
+-MVC--inbuild,  	
+-powerfull framework for web application
+	
+
+Module:
+	core
+		
+	test
+	
+	web
+	
+	context
+	
+	dao
+	
+------------
+IOC
+MVC
+AOP
+
+Boot
+REST
+Roo--CURD
+Spring Data
+spring Security
+
+-------
+Spring Andriod
+WebFlow
+Cloud
+
+-------------------------
+
+Servlet/ jsp
+	-Interceptor
+		35--worked
+			-param
+				-valuestack
+				
+	Servlet  jsp-----struts framework
+	filter      ---interceptors
+					
+			AOP		
+				
+	<input name="fname">
+		2004 - 2012 
+	class Employee{
+		private String fname;
+	}
+	
+	
+	ServletContext--once
+		
+	ServletConfig-multiple
+	
+-------------------------------------------
+IOC : Inversion of control
+	def:  to remove dependency between more than one object.
+Dependency Injection
+	Setter Based
+	Constructor based
+	
+	Collection Based
+	
+	
+class A{
+
+}
+
+class B{
+	A a;  ///loose coupled object--runtime, dynamic 
+	A a=new A() //tightly coupled object--compiletime static
+}
+	
+class Test{
+
+	A a=new A();
+		
+}	
+
+Spring Framework : bydefault create singleton object
+
+	if(a==null)
+		new A();
+
+BeanFactory
+	-org.springframework.bean.BeanFactory
+	-supported for core application
+ApplicationContext
+	org.springframework.context.ApplicationContext
+	-supported for core & Web application
+
+how to configure IOC
+	-XML
+		beans
+			
+	-Annotation--javabased configuration
+		@beans===new
+
+-----
+
+Employee e1=new Employee();
+
+Employee e2=new Employee();
+
+
+
+how to create Beans :
+applicationContext.xml
+
+
+
+	<beans> dtd
+		
+		<bean id="employee" class="com.app.Employee"></bean>
+		
+		<bean id="emp" class="com.app.Employee"></bean>
+		
+		<bean></bean>
+	
+	</beans>
+
+-------------------------
+Scope :
+	singleton--bydefault
+	prototype--multiple
+
+web	
+	request--one/multiple
+	session--one
+	globalSession--one
+	
+	
+@Data :
+	-Builder
+		-prototype--multiple
+
+dependency Injection (DI):
+	spring bydefault --setter 
+	more than one object dependency
+
+	-Setter Based
+	-Constructor  Based
+
+--------------------------
