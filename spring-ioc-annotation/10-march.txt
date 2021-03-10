@@ -1,0 +1,191 @@
+IOC:
+	DI-Dependency Injection
+		-Setter Based
+		-Constructor Based
+	
+		-Collection Based
+		
+class Student{
+	List<Address> address;
+}
+
+class Address{
+
+}	
+
+--------------------------
+Bean Life cycle
+	
+springBean container	
+	
+	
+	init----dynamic object
+	destory---clean 
+	
+	InitilizableBean
+		afterPropertiesSet
+	DesposableBean
+		destroy
+	
+
+
+reflection api:
+Class c=Class.forName("com.app.Person");
+	Object object=c.newInstance(); //dynamic object creation
+	
+
+Peson p=(Person)ac.getBean("person");
+-------------------------------------
+Scope :
+	singleton--bydefault
+	prototype--multiple
+
+web	
+	request--one/multiple
+	session--one
+	globalSession--one
+	
+--------------------------
+Autowired Modes:
+		loose coupled Object
+		
+	Modes :
+		1} byName : default   
+			A a;
+			
+		2} byType
+			A a;
+			
+		3} non
+		4} constructor
+			public person(int id, Certificate C)
+			
+		
+		T --type ---Integer
+		 E--Elements--Integer	
+		
+		
+
+@Autowired
+	bean
+@Resources
+	
+
+@Inject
+	bean
+
+
+@Qualifier
+
+
+
+IOC
+
+
+@Autowired
+@Qualifier("student")
+Student student;
+------------------------------------------------
+Annotation :
+	@Configuration
+		-indicate that bean auto configuration
+	@Bean
+		-used to create bean object
+	@scope :
+		bean scope define
+		
+
+	@Controller
+		responsible to handle web application flow
+	@RestController
+		web services ; REST
+	@Autowired
+		bean creation--loose coupled object
+	@Qualifiter
+	@RequestMapping
+	@ModelAttribute-set/get
+	@Service
+	@Repository
+	@Transactional
+	@Resouces
+	@Inject
+	@ResponseBody
+	@RequestBody
+	
+-----------------------------------	
+Spring MVC :
+	MVC-bydefault
+		DispatcherServlet--fontController
+			-it is responsible to handle internal mvc flow
+	web.xml
+		<servlet-mapping>
+			<servlet-name>abc</>
+		<servlet>
+			<s-n>abc
+			DispatcherServlet
+
+		abc-servlet.xml
+			<annotation-driven>//autoconfiguration
+			<annotationconfiguration>
+
+
+	controller--
+	
+	jsp/thymeleaf --font end
+-------------------------------------------------
+
+	
+	
+	
+	
+
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	

@@ -11,10 +11,48 @@
 
 
 	<bean id="student" class="com.app.pojo.Student">
+		<property name="addr">
+			<bean class="com.app.pojo.Address"/>
+		</property>
+	</bean>
+	
+	<bean id="student1" scope="prototype" class="com.app.pojo.Student">
 	</bean>
 
 	<bean id="address" class="com.app.pojo.Address">
 	</bean>
+
+
+
+	<bean id="c1" class="com.app.onetomany.Certificates">
+		<property name="id" value="1" />
+		<property name="certificatName" value="JAVA" />
+	</bean>
+	<bean id="c2" class="com.app.onetomany.Certificates">
+		<property name="id" value="2" />
+		<property name="certificatName" value="AWS" />
+	</bean>
+
+	<!-- init-method="setup" destroy-method="cleanUp" -->
+	<bean id="person" class="com.app.onetomany.Person"
+	autowire="byType">
+		<property name="id" value="101" />
+		<property name="name" value="abc" />
+		<property name="certificates">
+			<list>
+				<ref bean="c1" />
+				<ref bean="c2" />
+			</list>
+		</property>
+		
+	</bean>
+
+
+
+
+
+
+
 
 
 
